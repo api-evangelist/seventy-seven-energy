@@ -1,0 +1,122 @@
+generated: '2026-08-29'
+method: probed
+source: live HTTPS probes of the only host named in apis.yml (www.seventy-seven-energy.com)
+note: >-
+  RECORDED ABSENCE, NOT A PRESENCE. Every /.well-known/ path probed returned HTTP 404, so
+  NO WellKnown and NO SecurityTxt pointer is wired into apis.yml. Two separate findings sit
+  behind that zero. First, Seventy Seven Energy has not existed as an independent company
+  since 20 April 2017, when Patterson-UTI Energy completed its merger with it and folded
+  its affiliates (Nomac Drilling, Great Plains Oilfield Rental, Performance Technologies)
+  into Patterson-UTI Drilling and Universal Pressure Pumping. Second, and more importantly
+  for anyone reading this profile, the host these probes ran against IS NOT AND NEVER WAS
+  THE COMPANY'S DOMAIN — see host_attribution below. There is therefore no surface here to
+  find, and the 404s below say nothing at all about the company's own former posture.
+host_attribution:
+  probed_host: www.seventy-seven-energy.com
+  belongs_to_provider: false
+  finding: >-
+    seventy-seven-energy.com is a Wix-registered domain created 2024-01-12 — nearly seven
+    years AFTER Seventy Seven Energy ceased to exist — and it has never been deployed. It
+    resolves to Wix CDN addresses (185.230.63.171/.107/.186, ns4/ns5.wixdns.net) and answers
+    every path, root included, with a 2,517-byte Wix "ConnectYourDomain Error" page carrying
+    <meta name="robots" content="noindex">. The Wayback Machine holds exactly ONE capture of
+    it in its entire history (2024-05-11), and that capture is already a 404, so the domain
+    has never served content to anyone. It was wired into apis.yml as the Website pointer by
+    slug-shaped guessing, not by evidence.
+  actual_historic_domain: seventysevenenergy.com
+  actual_historic_domain_state: >-
+    NXDOMAIN — it no longer resolves. Wayback holds real captures back to 2016-01-09; the
+    last successful capture is 2024-09-25 (HTTP 200) and a 2025-07-10 attempt failed to
+    fetch, which brackets the domain's expiry. Not probed live for well-known documents
+    because there is no longer a host to probe.
+  action_taken: >-
+    The Website pointer to https://www.seventy-seven-energy.com was REMOVED from apis.yml
+    rather than left in place. A dead pointer is a false claim; a dead pointer at a domain a
+    different registrant owns is also a misattribution, and it would hand this profile a
+    third party's TLS and SPF posture.
+hosts:
+- host: www.seventy-seven-energy.com
+  https: true
+  server_note: >-
+    Wix "ConnectYourDomain Error" holding page answers every path with 404 and
+    content-type text/html. Not a host this company controls.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+contract_discovery:
+  note: >-
+    STEP 0b contract discovery ran against the only host this repo names. There is no
+    baseURL and no OpenAPI servers[] host to probe, because apis[] is empty — Seventy Seven
+    Energy was an oilfield services contractor and never shipped a public API. Every probe
+    returned the same Wix 404 holding page.
+  probes:
+  - url: https://www.seventy-seven-energy.com/openapi.json
+    status: 404
+  - url: https://www.seventy-seven-energy.com/openapi.yaml
+    status: 404
+  - url: https://www.seventy-seven-energy.com/swagger.json
+    status: 404
+  - url: https://www.seventy-seven-energy.com/v1/openapi.json
+    status: 404
+  - url: https://www.seventy-seven-energy.com/api-docs
+    status: 404
+  - url: https://www.seventy-seven-energy.com/docs
+    status: 404
+  - url: https://www.seventy-seven-energy.com/redoc
+    status: 404
+    status_note: probed for a rendered reference shell, not only for a raw spec
+  - url: https://www.seventy-seven-energy.com/llms.txt
+    status: 404
+  - url: https://www.seventy-seven-energy.com/graphql
+    status: 404
+  graphql:
+    note: >-
+      No /graphql surface answered, so no introspection POST was attempted. Nothing was
+      fabricated in place of an SDL.
+  mcp:
+    note: >-
+      No hosted MCP endpoint is advertised anywhere for this company, and no tools/list POST
+      was attempted against a guessed path. Per the pipeline contract an invented MCP
+      endpoint that happens to answer is the worst possible artifact, so none was tried.
+  a2a:
+    note: >-
+      /.well-known/agent-card.json and the pre-0.3 /.well-known/agent.json both 404. No a2a/
+      artifact is written — the agent card is search-only and must never be authored on a
+      provider's behalf.
+  packages:
+    note: >-
+      npm registry search for "seventy-seven-energy" returns no first-party package (the top
+      hits are unrelated Capacitor plugins); pypi.org/pypi/seventy-seven-energy/json returns
+      404. No SDK, CLI or client library exists to catalogue.
+  github:
+    note: >-
+      api.github.com/orgs/ returns 404 for seventy-seven-energy, sevenseventyenergy and
+      77energy. No GitHub organization exists, so no GitHubOrganization pointer is wired.
+  adjacent_domains_checked:
+  - domain: 77energy.com
+    status: 200
+    finding: >-
+      Resolves, but it is a HugeDomains parking and resale listing ("77Energy.com is for
+      sale"), not a company surface. Rejected — not wired as anything.
+  - domain: sevenseventyenergy.com
+    status: NXDOMAIN
+    finding: Does not resolve and has no Wayback history. Not this company's domain.

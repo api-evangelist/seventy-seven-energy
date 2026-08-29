@@ -1,11 +1,22 @@
-generated: '2026-07-11'
+generated: '2026-08-29'
 method: probed
 source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+attribution_warning: >-
+  THE HOST BELOW IS NOT THIS COMPANY'S. seventy-seven-energy.com is a Wix-registered domain
+  created 2024-01-12, nearly seven years after Seventy Seven Energy was merged into
+  Patterson-UTI Energy (20 April 2017), and it has never been deployed — it answers every
+  path with a Wix "ConnectYourDomain Error" 404 and has a single Wayback capture
+  (2024-05-11) that is itself a 404. The TLSv1.3 handshake and the SPF record recorded here
+  therefore belong to Wix and to an unrelated 2024 registrant, NOT to Seventy Seven Energy,
+  and must not be read as this company's security posture. The company's real historic
+  domain was seventysevenenergy.com, which is now NXDOMAIN. The Website pointer to this host
+  has been removed from apis.yml; this file is retained only as the record of what was
+  probed and why it does not count. See well-known/seventy-seven-energy-well-known.yml.
 hosts:
 - host: www.seventy-seven-energy.com
   https: true
   tls_version: TLSv1.3
-  cert_expires: Aug 23 11:35:39 2026 GMT
+  cert_expires: Nov  1 10:25:52 2026 GMT
   hsts: null
 domains:
 - domain: seventy-seven-energy.com

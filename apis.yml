@@ -1,5 +1,41 @@
 aid: seventy-seven-energy
 name: "Seventy Seven Energy"
+description: >-
+  Seventy Seven Energy Inc. was a diversified oilfield services company headquartered in
+  Oklahoma City, providing wellsite services and equipment to U.S. land-based oil and
+  natural gas exploration and production customers. It was formed in 2011 out of Chesapeake
+  Energy's oilfield services arm and spun off as an independent public company, operating
+  through affiliates including Nomac Drilling (contract land drilling), Performance
+  Technologies (hydraulic fracturing and pressure pumping) and Great Plains Oilfield Rental
+  (rental tools and equipment). After the 2014-2016 oil price collapse it completed a
+  prepackaged Chapter 11 restructuring and recapitalization, emerging in August 2016. THE
+  COMPANY NO LONGER EXISTS. Patterson-UTI Energy completed its merger with Seventy Seven
+  Energy on 20 April 2017 in a transaction valued at roughly USD 1.76 billion, issuing about
+  47.5 million shares and repaying USD 472 million of Seventy Seven Energy debt at closing;
+  Nomac was absorbed into Patterson-UTI Drilling and Performance Technologies into Universal
+  Pressure Pumping. Seventy Seven Energy never operated a public developer program, API,
+  SDK, or machine-readable specification of any kind, and there is no surviving entity to
+  publish one — its own domain, seventysevenenergy.com, no longer resolves.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/seventy-seven-energy.png
+url: https://raw.githubusercontent.com/api-evangelist/seventy-seven-energy/refs/heads/main/apis.yml
+specificationVersion: '0.23'
+x-status: defunct
+x-status-detail: Acquired by Patterson-UTI Energy in 2017 after a 2016 Chapter 11 restructuring;
+  no longer exists as an independent entity and has no first-party site of its own.
+created: '2026-03-24'
+modified: '2026-08-29'
+tags:
+- Company
+- Energy
+- Oil and Gas
+- Oilfield Services
+- Drilling
+- Pressure Pumping
+- Equipment Rental
+- Oklahoma
+- United States
+- Acquired
+- Defunct
 deliveryModel:
   model: unknown
   open_source: false
@@ -11,7 +47,6 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
-specificationVersion: '0.23'
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -23,19 +58,55 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/seventy-seven-energy.png
-url: 
-  https://raw.githubusercontent.com/api-evangelist/seventy-seven-energy/refs/heads/main/apis.yml
-modified: '2026-03-24'
 apis: []
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+- FN: APIs.json
+  email: info@apis.io
 common:
-  - type: DomainSecurity
-    url: security/seventy-seven-energy-domain-security.yml
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/seventy-seven-energy
-  - type: Website
-    url: https://www.seventy-seven-energy.com
-description: >-
-  Seventy Seven Energy was a diversified oilfield services company providing wellsite
-  services and equipment to oil and natural gas exploration and production customers
-  before being acquired by Patterson-UTI Energy.
+- type: DomainSecurity
+  url: security/seventy-seven-energy-domain-security.yml
+- type: LinkedIn
+  url: https://www.linkedin.com/company/seventy-seven-energy
+x-enrichment:
+  date: '2026-08-29'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+  note: >-
+    The Website pointer to https://www.seventy-seven-energy.com was REMOVED. It returns HTTP
+    404 on every path, and the domain is not this company's: it was registered through Wix
+    on 2024-01-12 — nearly seven years after Patterson-UTI absorbed Seventy Seven Energy —
+    has never been deployed, and holds a single Wayback capture (2024-05-11) that is itself a
+    404. Leaving it in place would have been both a dead pointer and a misattribution,
+    crediting this profile with an unrelated registrant's TLS and SPF posture. The company's
+    real historic domain, seventysevenenergy.com, is now NXDOMAIN. The full /.well-known/ and
+    STEP 0b contract-discovery probe is recorded at
+    well-known/seventy-seven-energy-well-known.yml with NO WellKnown and NO SecurityTxt
+    pointer, because every path 404d. No GitHub organization, npm package or PyPI package
+    exists under any name variant.
+x-coverage:
+  state: none
+  reason: defunct
+  detail: >-
+    Seventy Seven Energy was fully absorbed by Patterson-UTI Energy on 20 April 2017 and has
+    published nothing since; its own domain seventysevenenergy.com is now NXDOMAIN, and the
+    seventy-seven-energy.com host this profile had been pointing at is an unrelated Wix
+    domain registered in January 2024 that has never been deployed and answers every path,
+    including the root and all seven /.well-known/ paths, with a "ConnectYourDomain Error"
+    404.
+  evidence:
+  - url: https://www.seventy-seven-energy.com/
+    status: 404
+  - url: https://www.seventy-seven-energy.com/.well-known/security.txt
+    status: 404
+  - url: https://www.seventy-seven-energy.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.seventy-seven-energy.com/openapi.json
+    status: 404
+  - url: https://api.github.com/orgs/seventy-seven-energy
+    status: 404
+  - url: https://www.prnewswire.com/news-releases/patterson-uti-energy-completes-merger-with-seventy-seven-energy-300443089.html
+    status: 200
+  checked: '2026-08-29'
