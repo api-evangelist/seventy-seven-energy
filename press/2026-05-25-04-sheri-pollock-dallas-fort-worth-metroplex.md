@@ -1,7 +1,9 @@
 ---
 title: Sheri Pollock - Dallas-Fort Worth Metroplex
 url: https://www.linkedin.com/in/sheri-pollock-29b57b3
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Seventy Seven Energy" press release artificial intelligence'
 position: 4
 source: serpapi-google

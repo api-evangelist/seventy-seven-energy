@@ -1,7 +1,9 @@
 ---
 title: Patterson-UTI Buys Seventy Seven Energy In Near-$2B Deal
 url: https://www.law360.com/articles/871959/patterson-uti-buys-seventy-seven-energy-in-near-2b-deal
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Seventy Seven Energy" press release artificial intelligence'
 position: 2
 source: serpapi-google

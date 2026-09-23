@@ -1,7 +1,9 @@
 ---
 title: Seventy Seven Energy emerges from bankruptcy
 url: https://journalrecord.com/2016/08/01/seventy-seven-energy-emerges-from-bankruptcy/
-date: '2026-05-25'
+published: '2016-08-01'
+date_basis: url-derived
+harvested: '2026-05-25'
 query: '"Seventy Seven Energy" press release artificial intelligence'
 position: 1
 source: serpapi-google
