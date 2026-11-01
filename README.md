@@ -64,12 +64,38 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-This is a repository for tracking the APIs, SDKs, and other developer resources for Seventy Seven Energy.
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
 
-## APIs
+Seventy Seven Energy Inc. was a diversified oilfield services company headquartered in Oklahoma City, providing wellsite services and equipment to U.S. land-based oil and natural gas exploration and production customers. It was formed in 2011 out of Chesapeake Energy's oilfield services arm and spun off as an independent public company, operating through affiliates including Nomac Drilling (contract land drilling), Performance Technologies (hydraulic fracturing and pressure pumping) and Great Plains Oilfield Rental (rental tools and equipment). After the 2014-2016 oil price collapse it completed a prepackaged Chapter 11 restructuring and recapitalization, emerging in August 2016. THE COMPANY NO LONGER EXISTS. Patterson-UTI Energy completed its merger with Seventy Seven Energy on 20 April 2017 in a transaction valued at roughly USD 1.76 billion, issuing about 47.5 million shares and repaying USD 472 million of Seventy Seven Energy debt at closing; Nomac was absorbed into Patterson-UTI Drilling and Performance Technologies into Universal Pressure Pumping. Seventy Seven Energy never operated a public developer program, API, SDK, or machine-readable specification of any kind, and there is no surviving entity to publish one — its own domain, seventysevenenergy.com, no longer resolves.
 
-No APIs have been documented yet. Check back for updates.
+**Areas:** Company · Energy · Oil and Gas · Oilfield Services · Drilling · Pressure Pumping · Equipment Rental · Oklahoma · United States · Acquired · Defunct
 
-## Properties
+## Seventy Seven Energy on APIs.io (historical record)
 
-- [Website](https://www.seventy-seven-energy.com)
+Everything profiled for Seventy Seven Energy is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/seventy-seven-energy/](https://apis.io/providers/seventy-seven-energy/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Seventy Seven Energy Domain Security](https://apis.io/security/seventy-seven-energy/seventy-seven-energy-domain-security/)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Seventy Seven Energy: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/seventy-seven-energy/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
